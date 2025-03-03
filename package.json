@@ -1,0 +1,4 @@
+"scripts": {
+  "start": "json-server --watch mock-api.json --port 4000",
+  "build": "webpack"
+}
