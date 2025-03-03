@@ -1,0 +1,14 @@
+{
+  "db": {
+    "users": [
+      { "id": 1, "name": "John Doe", "email": "john@example.com" }
+    ],
+    "videos": [
+      { "id": 1, "title": "Sample Video", "url": "sample.mp4" }
+    ]
+  },
+  "routes": {
+    "/api/users": "users",
+    "/api/videos": "videos"
+  }
+}
