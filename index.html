@@ -1,64 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Video Platform</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <h1>VideoPlatform</h1>
-            <input type="search" placeholder="Search...">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">TV Shows</a></li>
-                <li><a href="#">Upload</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><img src="#" alt="User Profile" style="width: 20px; height: 20px; background-color: grey;"></li>
-            </ul>
-        </nav>
+      <nav>
+        <h1>VideoPlatform</h1>
+        <div class="search-container">
+          <input type="search" placeholder="Search..." />
+          <button class="clear-search">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">TV Shows</a></li>
+          <li>
+            <button class="login-btn">Login</button>
+          </li>
+          <li>
+            <button class="register-btn">Register</button>
+          </li>
+          <li>
+            <img
+              src="https://via.placeholder.com/30"
+              alt="User Profile"
+              class="profile-pic"
+            />
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section id="video-listings">
-            <video controls width="640" height="360">
-                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <h2>Video Title</h2>
-            <p>Video Description: This is a placeholder description.</p>
-        </section>
+      <section id="video-listings">
+        <div class="video-grid">
+          <!-- Video 1 -->
+          <a href="#" class="video-item">
+            <div class="thumbnail-container">
+              <img src="https://via.placeholder.com/320x180" alt="Video Thumbnail" />
+              <div class="thumbnail-overlay">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <h2>Video Title 1</h2>
+            <div class="video-info">
+              <span>1.2M Views</span>
+              <span>12:34</span>
+              <span>Uploaded 2 days ago</span>
+            </div>
+          </a>
 
-        <aside>
-            <h2>Trending</h2>
-            <ul>
-                <li>Video 1</li>
-                <li>Video 2</li>
-                <li>Video 3</li>
-                <li>Video 4</li>
-                <li>Video 5</li>
-            </ul>
+          <!-- Video 2 -->
+          <a href="#" class="video-item">
+            <div class="thumbnail-container">
+              <img src="https://via.placeholder.com/320x180" alt="Video Thumbnail" />
+              <div class="thumbnail-overlay">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <h2>Video Title 2</h2>
+            <div class="video-info">
+              <span>900K Views</span>
+              <span>8:56</span>
+              <span>Uploaded 5 days ago</span>
+            </div>
+          </a>
 
-            <h2>Categories</h2>
-            <ul>
-                <li>Action</li>
-                <li>Comedy</li>
-                <li>Drama</li>
-                <li>Sci-Fi</li>
-                <li>Thriller</li>
-            </ul>
-        </aside>
+          <!-- Add more videos here - Example -->
+          <a href="#" class="video-item">
+            <div class="thumbnail-container">
+              <img src="https://via.placeholder.com/320x180" alt="Video Thumbnail" />
+              <div class="thumbnail-overlay">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <h2>Video Title 3</h2>
+            <div class="video-info">
+              <span>750K Views</span>
+              <span>15:22</span>
+              <span>Uploaded 1 week ago</span>
+            </div>
+          </a>
+          <a href="#" class="video-item">
+            <div class="thumbnail-container">
+              <img src="https://via.placeholder.com/320x180" alt="Video Thumbnail" />
+              <div class="thumbnail-overlay">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <h2>Video Title 4</h2>
+            <div class="video-info">
+              <span>600K Views</span>
+              <span>9:10</span>
+              <span>Uploaded 1 month ago</span>
+            </div>
+          </a>
+          <a href="#" class="video-item">
+            <div class="thumbnail-container">
+              <img src="https://via.placeholder.com/320x180" alt="Video Thumbnail" />
+              <div class="thumbnail-overlay">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <h2>Video Title 5</h2>
+            <div class="video-info">
+              <span>500K Views</span>
+              <span>12:00</span>
+              <span>Uploaded 2 month ago</span>
+            </div>
+          </a>
+          <a href="#" class="video-item">
+            <div class="thumbnail-container">
+              <img src="https://via.placeholder.com/320x180" alt="Video Thumbnail" />
+              <div class="thumbnail-overlay">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <h2>Video Title 6</h2>
+            <div class="video-info">
+              <span>400K Views</span>
+              <span>13:10</span>
+              <span>Uploaded 3 month ago</span>
+            </div>
+          </a>
+          <a href="#" class="video-item">
+            <div class="thumbnail-container">
+              <img src="https://via.placeholder.com/320x180" alt="Video Thumbnail" />
+              <div class="thumbnail-overlay">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <h2>Video Title 7</h2>
+            <div class="video-info">
+              <span>300K Views</span>
+              <span>14:00</span>
+              <span>Uploaded 4 month ago</span>
+            </div>
+          </a>
+          <a href="#" class="video-item">
+            <div class="thumbnail-container">
+              <img src="https://via.placeholder.com/320x180" alt="Video Thumbnail" />
+              <div class="thumbnail-overlay">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <h2>Video Title 8</h2>
+            <div class="video-info">
+              <span>200K Views</span>
+              <span>15:10</span>
+              <span>Uploaded 5 month ago</span>
+            </div>
+          </a>
+          <a href="#" class="video-item">
+            <div class="thumbnail-container">
+              <img src="https://via.placeholder.com/320x180" alt="Video Thumbnail" />
+              <div class="thumbnail-overlay">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <h2>Video Title 9</h2>
+            <div class="video-info">
+              <span>100K Views</span>
+              <span>16:00</span>
+              <span>Uploaded 6 month ago</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <aside>
+        <h2>Trending</h2>
+        <ul>
+          <li>Video 1</li>
+          <li>Video 2</li>
+          <li>Video 3</li>
+          <li>Video 4</li>
+          <li>Video 5</li>
+        </ul>
+
+        <h2>Categories</h2>
+        <ul>
+          <li>Action</li>
+          <li>Comedy</li>
+          <li>Drama</li>
+          <li>Sci-Fi</li>
+          <li>Thriller</li>
+        </ul>
+      </aside>
     </main>
 
+    <button id="scrollToTopBtn"><i class="fas fa-arrow-up"></i></button>
+
     <footer>
-        <p>© 2024 VideoPlatform</p>
+      <hr />
+      <p>© 2024 VideoPlatform</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
