@@ -1,0 +1,26 @@
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-bg, #f5f5f5);
+  transition: background 0.3s;
+}
+
+.dark-mode {
+  --primary-bg: #1a1a1a;
+  --text-color: white;
+}
+
+.hero-heading {
+  font-size: 3rem;
+  color: var(--text-color, #222);
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
